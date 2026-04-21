@@ -1,11 +1,50 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title></title>
+	<title>Servicio IT</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+		/* Mejora responsive global */
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		body {
+			overflow-x: hidden;
+		}
+
+		/* Ajustes mobile */
+		@media screen and (max-width: 768px) {
+
+			h1 {
+				font-size: 1.8em;
+			}
+
+			h2 {
+				font-size: 1.5em;
+			}
+
+			.features {
+				flex-direction: column;
+			}
+
+			.posts {
+				flex-direction: column;
+			}
+
+			/* WhatsApp más chico */
+			a[href*="wa.me"] {
+				padding: 10px 12px !important;
+				font-size: 16px !important;
+			}
+		}
+	</style>
 </head>
+
 <body class="is-preload">
 
 <div id="wrapper">
@@ -21,7 +60,7 @@
 			<section id="banner">
 				<div class="content" style="text-align:center; width:100%;">
 					
-					<img src="images/logo_si.jpg" style="max-width:700px; margin-bottom:20px;" />
+					<img src="images/logo_si.jpg" style="width:100%; max-width:700px; margin-bottom:20px;" />
 
 					<header>
 						<h1></h1>
@@ -149,7 +188,6 @@
 
 				<ul class="icons">
 					<li><a href="https://linkedin.com/in/cristian-couto-147090211" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					
 				</ul>
 
 				<form method="POST" action="https://formspree.io/f/mjgjeqyz">
