@@ -288,7 +288,8 @@ style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white;
 💬
 </a>
 <!-- Botón Diagnóstico flotante -->
-<a href="#contacto"
+
+<a href="#contacto" id="btnDiagnostico"
 style="
 position:fixed;
 bottom:90px;
@@ -302,6 +303,7 @@ font-weight:bold;
 text-decoration:none;
 box-shadow:0 4px 10px rgba(0,0,0,0.3);
 z-index:999;
+transition: all 0.3s ease;
 ">
 📅 Diagnóstico sin cargo
 </a>
@@ -310,6 +312,12 @@ z-index:999;
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script>
+document.getElementById("btnDiagnostico").addEventListener("click", function() {
+	this.style.padding = "8px 10px";
+	this.style.fontSize = "11px";
+	this.style.opacity = "0.7";
+});
+</script>
 </body>
 </html>
