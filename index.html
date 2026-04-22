@@ -1,196 +1,327 @@
 <!DOCTYPE HTML>
+
 <html>
 <head>
 	<title>Servicio IT</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 
-	<style>
-		img {
-			max-width: 100%;
-			height: auto;
+```
+<style>
+	/* Mejora responsive global */
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	/* Todas las imágenes del mismo tamaño */
+	.posts article .image img {
+		height: 200px;
+		object-fit: cover;
+	}
+
+	/* Ajustes mobile */
+	@media screen and (max-width: 768px) {
+
+		h1 {
+			font-size: 1.8em;
 		}
 
-		body {
-			overflow-x: hidden;
+		h2 {
+			font-size: 1.5em;
 		}
 
-		/* GALERIA */
-		.galeria {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			gap: 20px;
+		.features {
+			flex-direction: column;
 		}
 
-		.item {
-			background: #fff;
-			border-radius: 10px;
-			overflow: hidden;
-			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-			text-align: center;
-			transition: 0.3s;
+		.posts {
+			flex-direction: column;
 		}
 
-		.item:hover {
-			transform: scale(1.03);
+		/* WhatsApp más chico */
+		a[href*="wa.me"] {
+			padding: 10px 12px !important;
+			font-size: 16px !important;
 		}
+	}
+</style>
+```
 
-		.item img {
-			width: 100%;
-			height: 200px;
-			object-fit: cover;
-		}
-
-		.item p {
-			padding: 10px;
-			font-size: 14px;
-		}
-
-		/* MOBILE */
-		@media screen and (max-width: 768px) {
-			.features {
-				flex-direction: column;
-			}
-		}
-	</style>
 </head>
 
 <body class="is-preload">
 
 <div id="wrapper">
+
+```
 <div id="main">
-<div class="inner">
+	<div class="inner">
 
-<header id="header">
-	<a href="index.html" class="logo"><strong>Servicio IT</strong></a>
-</header>
+		<header id="header">
+			<a href="index.html" class="logo"><strong>Servicio IT</strong></a>
+		</header>
 
-<!-- Banner -->
-<section id="banner">
-	<div class="content" style="text-align:center;">
-		<img src="images/logo_si.jpg" style="max-width:700px; margin-bottom:20px;" />
+		<!-- Banner -->
+		<section id="banner">
+			<div class="content" style="text-align:center; width:100%;">
+				
+				<img src="images/logo_si.jpg" style="width:100%; max-width:700px; margin-bottom:20px;" />
 
-		<p>Infraestructura, redes y tecnología inteligente</p>
+				<header>
+					<h1></h1>
+					<p>Infraestructura, redes y tecnología inteligente</p>
+				</header>
 
-		<p>
-			Brindamos servicios tecnológicos completos para empresas y particulares.
-		</p>
+				<p>
+					Brindamos servicios tecnológicos completos para empresas y particulares.
+					Desde instalación de redes y cámaras hasta soluciones avanzadas con inteligencia artificial.
+				</p>
 
-		<ul class="actions" style="justify-content:center;">
-			<li><a href="#contacto" class="button primary big">Solicitar presupuesto</a></li>
-			<li><a href="#trabajos" class="button big">Ver trabajos</a></li>
-		</ul>
+				<ul class="actions" style="justify-content:center;">
+					<li><a href="#contacto" class="button primary big">Solicitar presupuesto</a></li>
+					<li><a href="#trabajos" class="button big">Ver trabajos</a></li>
+				</ul>
+
+			</div>
+		</section>
+
+		<!-- Intro -->
+		<section>
+			<header class="major">
+				<h2>¿Por qué elegirnos?</h2>
+			</header>
+			<p>
+				Contamos con experiencia en infraestructura tecnológica, redes, seguridad y automatización.
+				Trabajamos con soluciones modernas adaptadas a cada cliente, garantizando calidad,
+				eficiencia y soporte continuo.
+			</p>
+		</section>
+
+		<!-- Servicios -->
+		<section>
+			<header class="major">
+				<h2>Servicios</h2>
+			</header>
+
+			<div class="features">
+
+				<article>
+					<span class="icon solid fa-brain"></span>
+					<div class="content">
+						<h3>Inteligencia Artificial</h3>
+						<p>	
+							Automatizamos procesos para negocios, pymes y emprendimientos
+							Desde tareas simples hasta mejoras productivas que ahorran tiempo y dinero.
+						</p>
+					</div>
+				</article>
+				
+				<article>
+					<span class="icon solid fa-microchip"></span>
+					<div class="content">
+						<h3>Domótica</h3>
+						<p>	
+							Convertimos tu hogar o local en un espacio inteligente.
+							Iluminación, seguridad y control automatizado al alcance de cualquier cliente.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<span class="icon solid fa-network-wired"></span>
+					<div class="content">
+						<h3>Cableado estructurado</h3>
+						<p>	
+							Redes estables y ordenadas para hogares, oficinas y empresas.
+							Ideal para pymes que necesitan conexión confiable y profesional.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<span class="icon solid fa-tools"></span>
+					<div class="content">
+						<h3>Mantenimiento IT</h3>
+						<p>	
+							Soporte técnico para computadoras, servidores y equipos de trabajo.
+							Atendemos desde usuarios domésticos hasta empresas en crecimiento.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<span class="icon solid fa-building"></span>
+					<div class="content">
+						<h3>Armado de oficinas</h3>
+						<p>
+							Diseñamos e implementamos espacios de trabajo funcionales.
+							Desde pequeñas oficinas hasta instalaciones completas para empresas.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<span class="icon solid fa-warehouse"></span>
+					<div class="content">
+						<h3>Depósitos y logística</h3>
+						<p>
+							Soluciones tecnológicas para control, organización y seguridad.
+							Adaptado a comercios, depósitos y pymes en expansión.
+						</p>
+					</div>
+				</article>
+
+				<article>
+					<span class="icon solid fa-video"></span>
+					<div class="content">
+						<h3>Cámaras de vigilancia</h3>
+						<p>
+							Sistemas de seguridad para hogares, locales y empresas.
+							Instalación profesional con acceso remoto desde el celular.
+						</p>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<!-- Trabajos -->
+		<section id="trabajos">
+			<header class="major">
+				<h2>Algunos de nuestros trabajos</h2>
+			</header>
+
+			<!-- FILTROS -->
+			<div style="text-align:center; margin-bottom:25px;">
+				<button class="button primary" onclick="filtrar('all')">Todos</button>
+				<button class="button" onclick="filtrar('camaras')">Cámaras</button>
+				<button class="button" onclick="filtrar('redes')">Redes</button>
+				<button class="button" onclick="filtrar('servidores')">Servidores</button>
+			</div>
+
+			<div class="posts">
+
+				<article class="item camaras">
+					<a href="#" class="image"><img src="images/cam01.jpg" /></a>
+					<h3>Instalación de cámaras</h3>
+					<p>Sistema de videovigilancia.</p>
+				</article>
+
+				<article class="item camaras">
+					<a href="#" class="image"><img src="images/cam02.jpg" /></a>
+					<h3>Cámaras hogar</h3>
+					<p>Monitoreo remoto desde celular.</p>
+				</article>
+
+				<article class="item redes">
+					<a href="#" class="image"><img src="images/utp01.jpg" /></a>
+					<h3>Red empresarial</h3>
+					<p>Cableado estructurado.</p>
+				</article>
+
+				<article class="item redes">
+					<a href="#" class="image"><img src="images/fortiap.jpg" /></a>
+					<h3>Instalación FortiAP</h3>
+					<p>Red WiFi profesional.</p>
+				</article>
+
+				<article class="item servidores">
+					<a href="#" class="image"><img src="images/srv01.jpg" /></a>
+					<h3>Servidor</h3>
+					<p>Implementación y soporte.</p>
+				</article>
+
+				<article class="item servidores">
+					<a href="#" class="image"><img src="images/srv02.jpg" /></a>
+					<h3>Servidor empresarial</h3>
+					<p>Acceso remoto seguro.</p>
+				</article>
+
+			</div>
+		</section>
+
+		<!-- Contacto -->
+		<section id="contacto">
+			<header class="major">
+				<h2>Contacto</h2>
+				<p><strong>Información de contacto</strong></p>
+			</header>
+
+			<div style="margin-bottom:25px; line-height:1.6;">
+				<p><strong>📍 Ubicación:</strong> Río Grande, Tierra del Fuego, Argentina</p>
+				<p><strong>🛠 Soporte:</strong> Atención a hogares, comercios y empresas</p>
+				<p><strong>📞 Teléfono:</strong> <a href="tel:+542964628889">+54 2964 628889</a></p>
+				<p><strong>⏰ Horario:</strong> Lunes a Sábado de 9:00 a 18:00 hs</p>
+				<p><strong>✉️ Email:</strong> <a href="mailto:solucionesinformaticastdf@gmail.com">solucionesinformaticastdf@gmail.com</a></p>
+			</div>
+
+			<h3>Consultas - Soluciones Informáticas TDF</h3>
+
+			<form method="POST" action="https://formspree.io/f/xqewdrnd">
+				<input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
+				<input type="hidden" name="_captcha" value="false">
+
+				<div class="fields">
+					<div class="field half">
+						<label>Nombre</label>
+						<input type="text" name="nombre" required>
+					</div>
+
+					<div class="field half">
+						<label>Email</label>
+						<input type="email" name="email" required>
+					</div>
+
+					<div class="field">
+						<label>Mensaje</label>
+						<textarea name="mensaje" rows="5" required></textarea>
+					</div>
+				</div>
+
+				<ul class="actions">
+					<li><input type="submit" value="Enviar Mensaje" class="primary"></li>
+				</ul>
+			</form>
+		</section>
+
 	</div>
-</section>
-
-<!-- Servicios -->
-<section>
-	<header class="major">
-		<h2>Servicios</h2>
-	</header>
-
-	<div class="features">
-
-		<article>
-			<h3>Cableado estructurado</h3>
-			<p>Redes estables y profesionales.</p>
-		</article>
-
-		<article>
-			<h3>Mantenimiento IT</h3>
-			<p>Soporte técnico y servidores.</p>
-		</article>
-
-		<article>
-			<h3>Cámaras</h3>
-			<p>Videovigilancia con acceso remoto.</p>
-		</article>
-
-	</div>
-</section>
-
-<!-- TRABAJOS -->
-<section id="trabajos">
-	<header class="major">
-		<h2>Algunos de nuestros trabajos</h2>
-	</header>
-
-	<!-- BOTONES -->
-	<div style="text-align:center; margin-bottom:30px;">
-		<button onclick="filtrar('all')" class="button primary">Todos</button>
-		<button onclick="filtrar('camaras')" class="button">Cámaras</button>
-		<button onclick="filtrar('redes')" class="button">Redes</button>
-		<button onclick="filtrar('servidores')" class="button">Servidores</button>
-	</div>
-
-	<!-- GALERIA -->
-	<div class="galeria">
-
-		<div class="item camaras">
-			<img src="images/cam01.jpg">
-			<p>Instalación de cámaras en comercio</p>
-		</div>
-
-		<div class="item camaras">
-			<img src="images/cam02.jpg">
-			<p>Sistema de videovigilancia hogar</p>
-		</div>
-
-		<div class="item redes">
-			<img src="images/utp01.jpg">
-			<p>Cableado estructurado oficina</p>
-		</div>
-
-		<div class="item redes">
-			<img src="images/fortiap.jpg">
-			<p>Instalación de FortiAP</p>
-		</div>
-
-		<div class="item servidores">
-			<img src="images/srv01.jpg">
-			<p>Servidor para empresa con acceso remoto</p>
-		</div>
-
-		<div class="item servidores">
-			<img src="images/srv02.jpg">
-			<p>Mantenimiento y soporte IT</p>
-		</div>
-
-	</div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-	<header class="major">
-		<h2>Contacto</h2>
-	</header>
-
-	<p>📍 Río Grande, Tierra del Fuego</p>
-	<p>📞 +54 2964 628889</p>
-
-	<form method="POST" action="https://formspree.io/f/xqewdrnd">
-		<input type="text" name="nombre" placeholder="Nombre" required>
-		<input type="email" name="email" placeholder="Email" required>
-		<textarea name="mensaje" placeholder="Mensaje" required></textarea>
-		<input type="submit" value="Enviar" class="primary">
-	</form>
-</section>
-
 </div>
-</div>
+```
+
 </div>
 
 <!-- WhatsApp -->
-<a href="https://wa.me/542964628889" target="_blank"
-style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%;">
-💬
-</a>
 
-<!-- SCRIPT FILTRO -->
+<a href="https://wa.me/542964628889?text=Hola%20quiero%20hacerle%20una%20consulta,%20" 
+target="_blank" 
+style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; font-size:20px;">
+💬 </a>
+
+<!-- Botón Diagnóstico -->
+
+<a href="#contacto"
+style="position:fixed; bottom:90px; right:20px; background:#e53935; color:white; width:55px; height:55px; display:flex; align-items:center; justify-content:center; border-radius:50%; font-size:22px;">
+📅 </a>
+
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/browser.min.js"></script>
+
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
+
 <script>
 function filtrar(categoria) {
-	let items = document.querySelectorAll(".item");
+	let items = document.querySelectorAll("#trabajos .item");
 
 	items.forEach(item => {
 		if (categoria === "all") {
@@ -198,6 +329,16 @@ function filtrar(categoria) {
 		} else {
 			item.style.display = item.classList.contains(categoria) ? "block" : "none";
 		}
+	});
+}
+
+// FIX error botón inexistente
+var btn = document.getElementById("btnDiagnostico");
+if (btn) {
+	btn.addEventListener("click", function() {
+		this.style.padding = "8px 10px";
+		this.style.fontSize = "11px";
+		this.style.opacity = "0.7";
 	});
 }
 </script>
